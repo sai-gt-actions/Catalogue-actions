@@ -1,6 +1,9 @@
 name: feature-pipeline
 on: [push]
-
+permissions:
+  contents: read
+  statuses: write
+  security-events: read
 jobs: 
   feature-pipeline:
     uses: sai-gt-actions/Workflows-actions/.github/workflows/feature-nodejs-pipeline.yaml@main
